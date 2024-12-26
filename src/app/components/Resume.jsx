@@ -14,7 +14,7 @@ const Resume = () => {
             icon: "fas fa-user-tie",
             title: "Head Graphic Designer & Video Editor",
             company: "Bluesky Education | Singapore",
-            date: "2021 - Mar. 2003",
+            date: "2021 - Mar. 2023",
             description:
               "Lead a dynamic team to create standout visual content. Passionate about innovation and brand consistency, I excel in developing compelling designs and videos.",
           },
