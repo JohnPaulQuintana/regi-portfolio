@@ -19,17 +19,9 @@ const Header = ({ onOpenForm }) => {
           className="container tablet:mt-0 flex justify-center gap-4 items-center flex-col laptop:flex-row laptop:px-32 wide:px-40 tablet:flex-col"
         >
           {/* Image Section */}
-          <div className="laptop:w-[60%] relative tablet:order-first"> 
+          <div className="laptop:w-[60%] tablet:order-first"> 
             <img src="/assets/imgs/hero/REGI.png" alt="Reginald" />
-            {/* <div className="absolute w-full grid grid-cols-4 gap-2 z-[99]">
-                <div className="border p-2">
-                  <img src="/assets/imgs/ps.png" alt="" srcset="" />
-                </div>
-                <div className="border">01</div>
-                <div className="border">01</div>
-                <div className="border">01</div>
-                
-            </div> */}
+            
             <div
               style={{
                 backgroundImage: "linear-gradient(180deg, transparent 20%, #1a1a1a  80%)",

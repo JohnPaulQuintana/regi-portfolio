@@ -1120,7 +1120,7 @@ figure {
 }
 
 .main-marq .box .item h4 .icon {
-  margin-bottom: -15px;
+  /* margin-bottom: -15px; */
 }
 
 .main-marq .box .item h2 {
@@ -7780,7 +7780,7 @@ footer.clean-footer.crev:before {
 }
 
 .services-crev .item-box {
-  padding: 40px 60px;
+  padding: 20px 20px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.01);
   position: relative;
