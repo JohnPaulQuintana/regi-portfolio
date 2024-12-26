@@ -81,7 +81,7 @@ const Header = ({ onOpenForm }) => {
                 </li>
               </ul>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center mb-4">
               <a type="button" className="bg-color-primary-green p-2 rounded-md text-xl wide:text-4xl font-bold mt-4">Download Resume <span className="icon ti-arrow-top-right text-xl wide:text-3xl"></span></a>
             </div>
           </div>
