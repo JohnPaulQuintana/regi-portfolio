@@ -42,7 +42,7 @@ const Header = ({ onOpenForm }) => {
           <div className="w-full laptop:w-[60%]">
             <div className="lg-text fw-600 text-center">
               <div className="text-4xl tablet:text-6xl mb-2">
-                <span className="text-color-primary-green">R</span>eginal{" "}
+                <span className="text-color-primary-green">R</span>eginald{" "}
                 <span className="text-color-primary-green">B</span>arawid
               </div>
               <div className="grid grid-cols-1 p-2">
