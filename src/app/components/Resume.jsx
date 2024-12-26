@@ -44,7 +44,7 @@ const Resume = () => {
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 laptop:grid-cols-2 gap-6">
 
                     <div className="rounded-md overflow-hidden">
                         <img
