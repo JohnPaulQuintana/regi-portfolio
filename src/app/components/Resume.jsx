@@ -58,7 +58,7 @@ const Resume = () => {
                     {timelineData.map((item, index) => (
 
                         <div key={index} className="p-2 border-l-2 flex gap-3 relative">
-                            <span className="absolute -left-2 top-4 text-color-primary-green"><i className="fa-solid fa-circle"></i></span>
+                            <span className="absolute -left-2 top-4"><i className="fa-solid fa-circle"></i></span>
                             <span className="ps-2">
                                 <i className={`${item.icon} text-2xl border p-1 rounded-md`}></i>
                             </span>
