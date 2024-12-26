@@ -81,7 +81,7 @@ const RoleTitle = () => {
                 </div>
                 <div className="flex flex-col laptop:flex-row gap-4">
 
-                    <div className="grid grid-cols-1 gap-2">
+                    <div className="grid grid-cols-1 gap-4">
                         {titleData.map((role) => (
                             <div key={role.id} className="h-fit flex">
                                 <div className="relative item-box shadow-md rounded-lg flex flex-col w-full">
