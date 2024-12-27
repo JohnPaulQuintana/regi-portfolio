@@ -1,68 +1,11 @@
 import React from "react";
 
 const About = () => {
-  const teamMembers = [
-    {
-      img: "assets/imgs/team/SOFIA.png",
-      role: "Digital Marketing Manager",
-      name: "Sofia Villanueva",
-      socials: ["facebook-f", "behance", "instagram"],
-      words: ['H','O','W','D','Y','!']
-    },
-    {
-      img: "assets/imgs/team/Keith.png",
-      role: "Marketing Strategist",
-      name: "Keith Tan",
-      socials: ["facebook-f", "behance", "instagram"],
-      words: ['H','E','Y',"!"]
-    },
-    {
-      img: "assets/imgs/team/Danna.png",
-      role: "Accounts Manager",
-      name: "Danna Ricolyn",
-      socials: ["facebook-f", "behance", "instagram"],
-      words: ['H','O','L','A','!']
-    },
-    {
-      img: "assets/imgs/team/Ralph.png",
-      role: "Senior Designer",
-      name: "Ralph Cortes",
-      socials: ["facebook-f", "behance", "instagram"],
-      words: ['H','O','L','A','!']
-    },
-    {
-      img: "assets/imgs/team/Neil.png",
-      role: "Senior Video Editor",
-      name: "Neil Acusin",
-      socials: ["facebook-f", "behance", "instagram"],
-      words: ['H','O','W','D','Y','!']
-    },
-    {
-      img: "assets/imgs/team/Percian.png",
-      role: "Senior Full-Stack Developer",
-      name: "Percian Joseph Borja",
-      socials: ["facebook-f", "behance", "instagram"],
-      words: ['C','I','A','O','!']
-    },
-    {
-      img: "assets/imgs/team/JP.png",
-      role: "Front-End Developer",
-      name: "John Paul Quintana",
-      socials: ["facebook-f", "behance", "instagram"],
-      words: ['H','E','L','L','O','!']
-    },
-    {
-      img: "assets/imgs/team/Denise.png",
-      role: "Graphic Designer",
-      name: "Denise Primitivo",
-      socials: ["facebook-f", "behance", "instagram"],
-      words: ['H','E','L','L','O','!']
-    },
-  ];
+ 
 
   return (
     <section
-      className="about-crev section-padding sub-bg position-re ontop desktop:px-40"
+      className="about-crev section-padding sub-bg position-re ontop desktop:px-40 about"
       data-scroll-index="4"
     >
       <div className="container">

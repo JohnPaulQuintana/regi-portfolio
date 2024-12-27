@@ -10,6 +10,10 @@ import Resume from "./components/Resume";
 import WorkSection from "./components/WorkSection";
 import Modal from "./components/ImageViewer"
 import { useLocation } from "react-router-dom";
+import ContactForm from "./components/ContactForm";
+import Testimonials from "./components/Testimonial";
+import GoogleMap from "./components/GoogleMap";
+import Footer from "./components/Footer";
 
 const HomeSection = () => {
     const location = useLocation();
@@ -47,16 +51,22 @@ const HomeSection = () => {
 
                 <div id="smooth-content">
                     <main className="main-bg">
-                        <Header />
+                        <Header/>
 
-                        <RoleTitle />
+                        <RoleTitle/>
 
                         <About />
 
                         <Resume />
 
                         <WorkSection openModal={openModal}/>
+
+                        <Testimonials />
+                        
+                        <GoogleMap />
+                        <ContactForm />
                     </main>
+                    <Footer />
                 </div>
                  {/* Modal Component */}
                 <Modal isVisible={isModalVisible} imageSrc={selectedImage?.src} type={selectedImage?.type} onClose={closeModal} />

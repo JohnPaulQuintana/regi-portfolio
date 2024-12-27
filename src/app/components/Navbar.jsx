@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { scrollToSection } from "../utils/scrollToSection";
 const Navbar = () => {
   const menuItems = [
-    { name: "Home", link: "/" },
-    { name: "About", link: "/" },
-    { name: "Portfolio", link: "/" },
+    { name: "Home", id: "home" },
+    { name: "About", id: "about" },
+    { name: "Portfolio", id: "work" },
     // { name: "Portfolio", link: "#portfolio" },
     // { name: "Pricing", link: "/" },
-    { name: "Contact", link: "/" },
+    { name: "Contact", id: "contact" },
     // { name: "Career", link: "/" },
   ];
 
@@ -18,7 +18,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link className="logo w-[150px] desktop:w-[150px]" to="/">
           {/* <img src="/assets/imgs/logo-light.png" alt="logo" /> */}
-          <span className="text-color-primary-green font-bold"><i class="fa-sharp fa-regular fa-triangle rotate-90 font-bold"></i> REGINALD</span>
+          <span className="text-color-primary-green font-bold"><i className="fa-sharp fa-regular fa-triangle rotate-90 font-bold"></i> REGINALD</span>
         </Link>
 
         {/* Toggler Button */}
@@ -44,13 +44,17 @@ const Navbar = () => {
           <ul className="navbar-nav">
             {menuItems.map((item, index) => (
               <li className="nav-item " key={index}>
-                <Link
+                <a
                   className="nav-link"
-                  to={item.link}
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault(); // Prevent the default anchor behavior
+                    scrollToSection(item.id); // Call the utility function
+                  }}
                   data-scroll-nav={index}
                 >
                   <span className="rolling-text">{item.name}</span>
-                </Link>
+                </a>
               </li>
             ))}
           </ul>

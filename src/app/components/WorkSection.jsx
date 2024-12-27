@@ -118,7 +118,7 @@ const WorkSection = ({openModal}) => {
 
 
   return (
-    <section className="work-stand section-padding sub-bg desktop:px-40">
+    <section className="work-stand section-padding sub-bg desktop:px-40 work">
       <div className="container">
       <div className="sec-head mb-4">
                     <h6 className="sub-title text-color-primary-green mb-25 font-bold text-xl">Portfolio</h6>

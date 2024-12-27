@@ -4,7 +4,7 @@ import MarqueeSection from "./Marquee";
 const Header = ({ onOpenForm }) => {
   return (
     <header
-      className="startup-header laptop:h-[100vh] relative flex justify-center items-center"
+      className="startup-header laptop:h-[100vh] relative flex justify-center items-center home"
       style={{
         backgroundImage: "url(/assets/imgs/map.png)",
         backgroundRepeat: "no-repeat",
@@ -19,7 +19,7 @@ const Header = ({ onOpenForm }) => {
           className="container tablet:mt-0 flex justify-center gap-4 items-center flex-col laptop:flex-row laptop:px-32 wide:px-40 tablet:flex-col"
         >
           {/* Image Section */}
-          <div className="laptop:w-[60%] tablet:order-first"> 
+          <div className="laptop:w-[60%] tablet:order-first relative"> 
             <img src="/assets/imgs/hero/REGI.png" alt="Reginald" />
             
             <div

@@ -101,14 +101,14 @@ const RoleTitle = () => {
                         ))}
                     </div>
                     <div className="border w-1 bg-white relative hidden laptop:block">
-                        <i class="fa-solid fa-circle absolute top-16 -left-2"></i>
-                        <i class="fa-solid fa-circle absolute top-28 -left-2"></i>
-                        <i class="fa-solid fa-circle absolute top-[28%] -left-2"></i>
-                        <i class="fa-solid fa-circle absolute top-[38%] -left-2"></i>
-                        <i class="fa-solid fa-circle absolute top-[48%] -left-2"></i>
-                        <i class="fa-solid fa-circle absolute top-[68%] -left-2"></i>
-                        <i class="fa-solid fa-circle absolute top-[73%] -left-2"></i>
-                        <i class="fa-solid fa-circle absolute top-[90%] -left-2"></i>
+                        <i className="fa-solid fa-circle absolute top-16 -left-2"></i>
+                        <i className="fa-solid fa-circle absolute top-28 -left-2"></i>
+                        <i className="fa-solid fa-circle absolute top-[28%] -left-2"></i>
+                        <i className="fa-solid fa-circle absolute top-[38%] -left-2"></i>
+                        <i className="fa-solid fa-circle absolute top-[48%] -left-2"></i>
+                        <i className="fa-solid fa-circle absolute top-[68%] -left-2"></i>
+                        <i className="fa-solid fa-circle absolute top-[73%] -left-2"></i>
+                        <i className="fa-solid fa-circle absolute top-[90%] -left-2"></i>
                     </div>
                     <div className="flex flex-col gap-4 border-gray-900">
                     {skills.map((skill, index) => (
