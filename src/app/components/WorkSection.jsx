@@ -226,7 +226,7 @@ const WorkSection = ({ openModal }) => {
                       const loader = e.target.previousSibling;
                       setTimeout(() => {
                         loader.style.display = "none";
-                      }, 1000); // 1-second timer to hide the loader
+                      }, 5000); // 1-second timer to hide the loader
                     }}
                     className="w-full h-auto object-cover rounded-lg"
                   />
