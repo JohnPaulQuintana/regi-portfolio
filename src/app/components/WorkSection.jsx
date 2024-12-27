@@ -1,54 +1,79 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
+import imagesLoaded from "imagesloaded";
+import Isotope from "isotope-layout";
+
 const WorkSection = ({ openModal }) => {
   const galleryRef = useRef(null); // Ref for the gallery container
   const [isotopeInstance, setIsotopeInstance] = useState(null); // Store the Isotope instance
   const [activeFilter, setActiveFilter] = useState(".graphic"); // Track active filter
+  const [loadingImages, setLoadingImages] = useState({}); // Track loading state of each image
   const location = useLocation(); // Access URL location
 
   useEffect(() => {
     if (galleryRef.current && !isotopeInstance) {
       // Initialize Isotope only if the galleryRef is ready
-      const instance = new window.Isotope(galleryRef.current, {
+      const instance = new Isotope(galleryRef.current, {
         itemSelector: ".items", // Class for items in the gallery
         layoutMode: "fitRows",        // Use the fitRows layout mode
         percentPosition: true,  // Ensures that items are correctly positioned relative to their parent
       });
+
+      // Wait for images to load before layout
+      imagesLoaded(galleryRef.current, () => {
+        instance.layout();
+      });
+      
       setIsotopeInstance(instance);
     }
+    
+    
+
     // Cleanup the Isotope instance on component unmount
-    return () => {
-      if (isotopeInstance) {
-        isotopeInstance.destroy();
-      }
-    };
+    // return () => {
+    //   if (isotopeInstance) {
+    //     isotopeInstance.destroy();
+    //   }
+    // };
   }, [galleryRef, isotopeInstance]);
 
   useEffect(() => {
     if (isotopeInstance) {
       // Apply filter when activeFilter changes
       isotopeInstance.arrange({ filter: activeFilter });
+      isotopeInstance.layout(); // Ensure proper layout
     }
   }, [activeFilter, isotopeInstance]);
 
   const handleFilterClick = (filterValue) => {
     // setHoveredFilter(filterValue);
     setActiveFilter(filterValue); // Update the active filter
+    
   };
 
 
   // Handle URL query parameters to set the initial filter
-  useEffect(() => {
-    const params = new URLSearchParams(location.search);
-    const filterFromUrl = params.get("filter"); // Get the "filter" query parameter
-    if (filterFromUrl) {
-      setActiveFilter(`.${filterFromUrl}`);
-    } else {
-      setActiveFilter(".graphic"); // Default to show all if no filter parameter
-    }
-  }, [location.search]);
+  // useEffect(() => {
+  //   const params = new URLSearchParams(location.search);
+  //   const filterFromUrl = params.get("filter"); // Get the "filter" query parameter
+  //   if (filterFromUrl) {
+  //     setActiveFilter(`.${filterFromUrl}`);
+  //   } else {
+  //     setActiveFilter(".graphic"); // Default to show all if no filter parameter
+  //   }
+  // }, [location.search]);
 
+
+  // const handleImageLoad = (id) => {
+  //   setLoadingImages((prevState) => ({
+  //     ...prevState,
+  //     [id]: false, // Set the image to not loading once it's loaded
+  //   }));
+  //   if (isotopeInstance) {
+  //     isotopeInstance.layout(); // Recalculate layout
+  //   }
+  // };
 
 
   const categories = [
@@ -188,8 +213,23 @@ const WorkSection = ({ openModal }) => {
           {categories.map((item) => (
             <div key={item.id} className={`col-lg-4 col-md-6 transition-transform transform scale-100 hover:scale-110 duration-300 items ${item.category}`}>
               <div className="item mb-40">
-                <a onClick={() => openModal(item.imgSrc[1], item.type)} className="img">
-                  <img src={`${item.imgSrc[0]}`} alt={item.title} />
+                <a onClick={() => openModal(item.imgSrc[1], item.type)} className="img relative block">
+                  {/* Skeleton Loader */}
+                  <div className="skeleton-loader bg-color-dark animate-pulse absolute top-0 left-0 w-full h-full rounded-lg flex items-center justify-center text-5xl">
+                    <i className="fa-solid fa-loader fa-spin text-color-primary-green"></i>
+                  </div>
+
+                  <img
+                    src={`${item.imgSrc[0]}`}
+                    alt={item.title}
+                    onLoad={(e) => {
+                      const loader = e.target.previousSibling;
+                      setTimeout(() => {
+                        loader.style.display = "none";
+                      }, 10000); // 1-second timer to hide the loader
+                    }}
+                    className="w-full h-auto object-cover rounded-lg"
+                  />
                 </a>
                 <div className="cont mt-2">
                   <h5 className="fz-12 text-center">
