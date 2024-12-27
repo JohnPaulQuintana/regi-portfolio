@@ -130,7 +130,7 @@ const WorkSection = ({openModal}) => {
                             <a href="#" 
                               onClick={(e) => {
                                 e.preventDefault()
-                                openModal("/assets/resume/resume-2.pdf", "video")
+                                openModal("/assets/resume/resume-1.pdf", "video")
                             }}
                               className="go-more text-color-primary-green flex">
                                 <span className="text flex gap-1"><span className="hidden phone:block">Download</span> Resume</span>

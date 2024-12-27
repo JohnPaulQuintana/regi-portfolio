@@ -85,7 +85,7 @@ const Header = ({ openModal }) => {
               <a type="button" 
                 onClick={(e) => {
                   e.preventDefault()
-                  openModal("/assets/resume/resume-2.pdf", "video")
+                  openModal("/assets/resume/resume-1.pdf", "video")
               }}
               className="bg-color-primary-green p-2 rounded-md text-xl wide:text-4xl font-bold mt-4">Download Resume <span className="icon ti-arrow-top-right text-xl wide:text-3xl"></span></a>
             </div>
