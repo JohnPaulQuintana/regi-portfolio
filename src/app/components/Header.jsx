@@ -1,7 +1,7 @@
 import React from "react";
 import MarqueeSection from "./Marquee";
 
-const Header = ({ onOpenForm }) => {
+const Header = ({ openModal }) => {
   return (
     <header
       className="startup-header laptop:h-[100vh] relative flex justify-center items-center home"
@@ -46,7 +46,7 @@ const Header = ({ onOpenForm }) => {
                 <li className="hover-this cursor-pointer">
                   <a
                     href="https://www.facebook.com/irving.barawid.9"
-                    className="hover-anim flex items-center justify-center gap-2 text-2xl phone:text-xl"
+                    className="hover-anim flex items-center justify-center gap-2 text-4xl phone:text-xl"
                   >
                     <i className="fab fa-facebook-f text-color-primary-green"></i>{" "}
                     <span className="hidden phone:block">Facebook</span>
@@ -55,7 +55,7 @@ const Header = ({ onOpenForm }) => {
                 <li className="hover-this cursor-pointer">
                   <a
                     href="tel:+639289662856"
-                    className="hover-anim flex items-center justify-center gap-2 text-2xl phone:text-xl"
+                    className="hover-anim flex items-center justify-center gap-2 text-4xl phone:text-xl"
                   >
                     <i className="fa-brands fa-whatsapp text-md text-color-primary-green"></i>{" "}
                     <span className="hidden phone:block">Whatsapp</span>
@@ -64,7 +64,7 @@ const Header = ({ onOpenForm }) => {
                 <li className="hover-this cursor-pointer">
                   <a
                     href="skype:live:.cid.70e60d46c3462681?chat"
-                    className="hover-anim flex items-center justify-center gap-2 text-2xl phone:text-xl"
+                    className="hover-anim flex items-center justify-center gap-2 text-4xl phone:text-xl"
                   >
                     <i className="fab fa-skype text-color-primary-green"></i>{" "}
                     <span className="hidden phone:block">Skype</span>
@@ -73,7 +73,7 @@ const Header = ({ onOpenForm }) => {
                 <li className="hover-this cursor-pointer">
                   <a
                     href="mailto:kingbbarawid5@gmail.com"
-                    className="hover-anim flex items-center justify-center gap-2 text-2xl phone:text-xl"
+                    className="hover-anim flex items-center justify-center gap-2 text-4xl phone:text-xl"
                   >
                     <i className="fa-regular fa-envelope text-color-primary-green"></i>{" "}
                     <span className="hidden phone:block">Email</span>
@@ -82,7 +82,12 @@ const Header = ({ onOpenForm }) => {
               </ul>
             </div>
             <div className="flex justify-center mb-4">
-              <a type="button" className="bg-color-primary-green p-2 rounded-md text-xl wide:text-4xl font-bold mt-4">Download Resume <span className="icon ti-arrow-top-right text-xl wide:text-3xl"></span></a>
+              <a type="button" 
+                onClick={(e) => {
+                  e.preventDefault()
+                  openModal("/assets/resume/resume-2.pdf", "video")
+              }}
+              className="bg-color-primary-green p-2 rounded-md text-xl wide:text-4xl font-bold mt-4">Download Resume <span className="icon ti-arrow-top-right text-xl wide:text-3xl"></span></a>
             </div>
           </div>
         </div>

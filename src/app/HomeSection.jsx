@@ -51,13 +51,13 @@ const HomeSection = () => {
 
                 <div id="smooth-content">
                     <main className="main-bg">
-                        <Header/>
+                        <Header openModal={openModal}/>
 
                         <RoleTitle/>
 
                         <About />
 
-                        <Resume />
+                        <Resume openModal={openModal}/>
 
                         <WorkSection openModal={openModal}/>
 

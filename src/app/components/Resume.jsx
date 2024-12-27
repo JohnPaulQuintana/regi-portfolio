@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const Resume = () => {
+const Resume = ({openModal}) => {
     const timelineData = [
         {
           icon: "fas fa-user-tie", // Font Awesome icon class
@@ -28,19 +28,24 @@ const Resume = () => {
           },
     ]
     return (
-        <section className="services-crev section-padding" data-scroll-index="1">
+        <section className="services-crev section-padding resume" data-scroll-index="1">
             <div className="container desktop:px-40">
                 <div className="sec-head mb-4">
                     <h6 className="sub-title text-color-primary-green mb-25 font-bold text-xl">Work Experience</h6>
                     <div className="pt-25 bord-thin-top d-flex align-items-center">
-                        <h2 className="fw-600 text-u ls1 font-bold text-3xl wide:text-5xl">
+                        <h2 className="fw-600 text-u ls1 font-bold text-xl phone:text-3xl wide:text-5xl">
                             My Experience <span className="fw-200"></span>
                         </h2>
                         <div className="ml-auto">
-                            <Link to="/" className="go-more text-color-primary-green">
-                                <span className="text">Download Resume</span>
+                            <a href="#" 
+                                onClick={(e) => {
+                                    e.preventDefault()
+                                    openModal("/assets/resume/resume-2.pdf", "video")
+                                }}
+                                className="go-more text-color-primary-green flex">
+                                <span className="text flex gap-1"><span className="hidden phone:block">Download</span> Resume</span>
                                 <span className="icon ti-arrow-top-right"></span>
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -60,7 +65,7 @@ const Resume = () => {
                         <div key={index} className="p-2 border-l-2 flex gap-3 relative">
                             <span className="absolute -left-2 top-4"><i className="fa-solid fa-circle"></i></span>
                             <span className="ps-2">
-                                <i className={`${item.icon} text-2xl border p-1 rounded-md`}></i>
+                                <i className={`${item.icon} text-2xl border p-1 rounded-md hidden tablet:block`}></i>
                             </span>
                             <div className="flex flex-col gap-2">
                                 <span className="font-bold text-2xl text-color-primary-green">{item.title}</span>

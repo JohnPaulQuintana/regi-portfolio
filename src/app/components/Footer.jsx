@@ -7,8 +7,8 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           {/* Logo Section */}
-          <div className="col-lg-4 col-md-6 md-mb15">
-            <div className="logo icon-img-250">
+          <div className="col-lg-4 col-md-6">
+            <div className="logo">
               <Link className="logo w-[150px] desktop:w-[150px]" to="/">
                 {/* <img src="/assets/imgs/logo-light.png" alt="logo" /> */}
                 <span className="text-color-primary-green font-bold"><i className="fa-sharp fa-regular fa-triangle rotate-90 font-bold"></i> REGINALD</span>
@@ -19,7 +19,7 @@ const Footer = () => {
           {/* Center Text */}
           <div className="col-lg-4 order-md-3">
             <div className="text-center">
-              <p className="fz-14 footer-text">
+              <p className="text-xl tablet:text-2xl">
                 © {new Date().getFullYear()} Reginald Barawid {" "}
                 <span className="underline main-color">
                   {/* <a

@@ -8,6 +8,7 @@ const Sidebar = () => {
         ["About", "about"],
         ["Portfolio", "work"],
         ["Contact", "contact"],
+        ["Resume", "resume"],
     ];
 
     return (

@@ -9380,7 +9380,7 @@ footer.clean-footer.crev:before {
     height: calc(100vh - 40px);
   }
   .sec-head h2 {
-    font-size: 35px;
+    /* font-size: 35px; */
   }
   .main-header .lg-text h1 {
     font-size: 8vw;
@@ -9461,7 +9461,7 @@ footer.clean-footer.crev:before {
     bottom: auto;
   }
   .services-crev .item-box {
-    padding: 40px;
+    /* padding: 40px; */
   }
   .services-crev .item-box .icon {
     margin-right: 50px !important;
@@ -9815,7 +9815,7 @@ footer.clean-footer.crev:before {
     display: block !important;
   }
   .sec-head h2 {
-    font-size: 28px;
+    /* font-size: 28px; */
   }
   .sec-head .go-more {
     margin-top: 10px;
@@ -10152,7 +10152,7 @@ footer.clean-footer.crev:before {
     text-align: left !important;
   }
   .min-footer .logo {
-    margin-bottom: 30px;
+    margin-bottom: 8px;
   }
   .min-footer .text-center {
     text-align: left !important;

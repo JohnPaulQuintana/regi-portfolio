@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const WorkSection = ({openModal}) => {
   const galleryRef = useRef(null); // Ref for the gallery container
   const [isotopeInstance, setIsotopeInstance] = useState(null); // Store the Isotope instance
-  const [activeFilter, setActiveFilter] = useState("*"); // Track active filter
+  const [activeFilter, setActiveFilter] = useState(".graphic"); // Track active filter
   const location = useLocation(); // Access URL location
 
   useEffect(() => {
@@ -38,7 +38,7 @@ const WorkSection = ({openModal}) => {
     if (filterFromUrl) {
       setActiveFilter(`.${filterFromUrl}`);
     } else {
-      setActiveFilter("*"); // Default to show all if no filter parameter
+      setActiveFilter(".graphic"); // Default to show all if no filter parameter
     }
   }, [location.search]);
 
@@ -123,14 +123,19 @@ const WorkSection = ({openModal}) => {
       <div className="sec-head mb-4">
                     <h6 className="sub-title text-color-primary-green mb-25 font-bold text-xl">Portfolio</h6>
                     <div className="pt-25 bord-thin-top d-flex align-items-center">
-                        <h2 className="fw-600 text-u ls1 font-bold text-3xl wide:text-5xl">
+                        <h2 className="fw-600 text-u ls1 font-bold text-xl phone:text-3xl wide:text-5xl">
                         My Latest <span className="fw-200"> Works</span>
                         </h2>
                         <div className="ml-auto">
-                            <Link to="/" className="go-more text-color-primary-green">
-                                <span className="text">Download Resume</span>
+                            <a href="#" 
+                              onClick={(e) => {
+                                e.preventDefault()
+                                openModal("/assets/resume/resume-2.pdf", "video")
+                            }}
+                              className="go-more text-color-primary-green flex">
+                                <span className="text flex gap-1"><span className="hidden phone:block">Download</span> Resume</span>
                                 <span className="icon ti-arrow-top-right"></span>
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>

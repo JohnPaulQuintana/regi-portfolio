@@ -9,6 +9,7 @@ const Navbar = () => {
     // { name: "Portfolio", link: "#portfolio" },
     // { name: "Pricing", link: "/" },
     { name: "Contact", id: "contact" },
+    { name: "Resume", id: "resume" },
     // { name: "Career", link: "/" },
   ];
 
