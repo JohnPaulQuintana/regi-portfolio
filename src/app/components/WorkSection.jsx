@@ -156,7 +156,7 @@ const WorkSection = ({ openModal }) => {
           <h6 className="sub-title text-color-primary-green mb-25 font-bold text-xl">Portfolio</h6>
           <div className="pt-25 bord-thin-top d-flex align-items-center">
             <h2 className="fw-600 text-u ls1 font-bold text-xl phone:text-3xl wide:text-5xl">
-              My Latest <span className="fw-200"> Works</span>
+                My Latest <span className="fw-200"> Works</span>
             </h2>
             <div className="ml-auto">
               <a href="#"
@@ -226,7 +226,7 @@ const WorkSection = ({ openModal }) => {
                       const loader = e.target.previousSibling;
                       setTimeout(() => {
                         loader.style.display = "none";
-                      }, 10000); // 1-second timer to hide the loader
+                      }, 1000); // 1-second timer to hide the loader
                     }}
                     className="w-full h-auto object-cover rounded-lg"
                   />
