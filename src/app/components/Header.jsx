@@ -43,7 +43,7 @@ const Header = ({ openModal }) => {
                 // borderRadius: "10px",
                 // opacity: 0,
               }}
-            class="absolute bottom-0 z-50 w-full text-center p-2 text-xl"><span class="fz-18">Sofreg Solutions</span><h6 class="fz-24 font-bold">Director</h6></div>
+            class="absolute bottom-0 z-50 w-full text-center p-2 text-xl phone:text-4xl"><h6 class="">Reginald Barawid</h6></div>
             <div
               style={{
                 backgroundImage: "linear-gradient(180deg, transparent 20%, #1a1a1a  80%)",
@@ -56,8 +56,8 @@ const Header = ({ openModal }) => {
           <div className="w-full laptop:w-[60%]">
             <div className="lg-text fw-600 text-center">
               <div className="text-4xl tablet:text-6xl mb-2">
-                <span className="">R</span>eginald{" "}
-                <span className="">B</span>arawid
+                <span className="">P</span>ersonal{" "}
+                <span className="">P</span>ortfolio
               </div>
               <div className="grid grid-cols-1 p-2">
                 <MarqueeSection />
