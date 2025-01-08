@@ -109,7 +109,7 @@ const Header = ({ openModal }) => {
                   e.preventDefault()
                   openModal("/assets/resume/resume-1.pdf", "video")
               }}
-              className="bg-color-primary-green p-2 rounded-md text-xl wide:text-4xl font-bold mt-4">Download Resume <span className="icon ti-arrow-top-right text-xl wide:text-3xl"></span></a>
+              className="bg-color-primary-green p-2 rounded-md text-xl wide:text-2xl font-bold mt-4">Download Resume <span className="icon ti-arrow-top-right text-xl wide:text-xl"></span></a>
             </div>
           </div>
         </div>
