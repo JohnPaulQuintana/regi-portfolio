@@ -119,7 +119,7 @@ const ContactForm = () => {
                     <div className="col-lg-4 valign">
                         <div className="sec-head info-box full-width md-mb80">
                             <div className="phone fz-30 fw-600 underline text-color-primary-green">
-                                <a href="#0" className='text-2xl'>+63 928 9662 856</a>
+                                <a href="tel:+639177070531" className='text-2xl'>+63 917 707 0531</a>
                             </div>
                             <div className="morinfo mt-4 pb-2 bord-thin-bottom">
                                 <h6 className="mb-2 text-xl">Address</h6>

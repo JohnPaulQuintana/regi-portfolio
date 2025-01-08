@@ -14,7 +14,7 @@ const MarqueeSection = () => {
                 </div>
                 <div className="item">
                   <h4 className="d-flex align-items-center">
-                    <span className="text-color-primary-green">Dynamic Video Producer</span>
+                    <span className="">Dynamic Video Producer</span>
                     <span className="ml-50 stroke icon">02</span>
                   </h4>
                 </div>
@@ -32,7 +32,7 @@ const MarqueeSection = () => {
                 </div>
                 <div className="item">
                   <h4 className="d-flex align-items-center">
-                    <span className="text-color-primary-green">Dynamic Video Producer</span>
+                    <span className="">Dynamic Video Producer</span>
                     <span className="text-2xl ml-50 stroke icon">02</span>
                   </h4>
                 </div>
@@ -50,7 +50,7 @@ const MarqueeSection = () => {
                 </div>
                 <div className="item">
                   <h4 className="d-flex align-items-center">
-                    <span className="text-color-primary-green">Dynamic Video Producer</span>
+                    <span className="">Dynamic Video Producer</span>
                     <span className="text-2xl ml-50 stroke icon">02</span>
                   </h4>
                 </div>
@@ -68,7 +68,7 @@ const MarqueeSection = () => {
                 </div>
                 <div className="item">
                   <h4 className="d-flex align-items-center">
-                    <span className="text-color-primary-green">Dynamic Video Producer</span>
+                    <span className="">Dynamic Video Producer</span>
                     <span className="text-2xl ml-50 stroke icon">02</span>
                   </h4>
                 </div>

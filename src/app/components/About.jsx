@@ -69,13 +69,13 @@ const About = () => {
                       <div className="skill-item mb-3">
                         <h5 className="sub-title mb-2">Web Development</h5>
                         <div className="skill-progress">
-                          <div className="progres" data-value="98%"></div>
+                          <div className="progres" data-value="100%"></div>
                         </div>
                       </div>
                       <div className="skill-item">
                         <h5 className="sub-title mb-3">Video Production</h5>
                         <div className="skill-progress">
-                          <div className="progres" data-value="95%"></div>
+                          <div className="progres" data-value="100%"></div>
                         </div>
                       </div>
                     </div>

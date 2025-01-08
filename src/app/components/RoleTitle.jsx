@@ -33,32 +33,38 @@ const RoleTitle = () => {
         {
             icon: "/assets/imgs/ps.png",
             title: "Adobe Photoshop",
-            experience: "8 Years",
+            experience: "9 Years",
             description: "Expertise in photo editing, graphic design, and creating stunning visuals.",
         },
         {
             icon: "/assets/imgs/illus.png",
             title: "Adobe Illustrator",
-            experience: "8 Years",
+            experience: "9 Years",
             description: "Specialized in vector design, logos, and creative branding assets to bring ideas to life.",
         },
         {
             icon: "/assets/imgs/ind.png",
             title: "Adobe InDesign",
-            experience: "4 Years",
+            experience: "9 Years",
             description: "Experienced in creating professional layouts for magazines, brochures, and eBooks.",
         },
         {
             icon: "/assets/imgs/prem.png",
             title: "Adobe Premiere",
-            experience: "2 Years",
+            experience: "6 Years",
             description: "Proficient in video editing and post-production, crafting high-quality visual stories.",
         },
         {
             icon: "/assets/imgs/fig.png",
             title: "Figma",
-            experience: "2 Years",
+            experience: "8 Years",
             description: "Skilled in UI/UX design, prototyping, and collaborative workflows for web and app design.",
+        },
+        {
+            icon: "/assets/imgs/eff.png",
+            title: "After Effects",
+            experience: "6 Years",
+            description: "Proficient in creating motion graphics, visual effects, and video compositing for professional multimedia projects.",
         },
     ];
 
@@ -103,12 +109,13 @@ const RoleTitle = () => {
                     <div className="border w-1 bg-white relative hidden laptop:block">
                         <i className="fa-solid fa-circle absolute top-16 -left-2"></i>
                         <i className="fa-solid fa-circle absolute top-28 -left-2"></i>
-                        <i className="fa-solid fa-circle absolute top-[28%] -left-2"></i>
+                        <i className="fa-solid fa-circle absolute top-[24%] -left-2"></i>
                         <i className="fa-solid fa-circle absolute top-[38%] -left-2"></i>
-                        <i className="fa-solid fa-circle absolute top-[48%] -left-2"></i>
-                        <i className="fa-solid fa-circle absolute top-[68%] -left-2"></i>
+                        <i className="fa-solid fa-circle absolute top-[40%] -left-2"></i>
+                        <i className="fa-solid fa-circle absolute top-[57%] -left-2"></i>
                         <i className="fa-solid fa-circle absolute top-[73%] -left-2"></i>
-                        <i className="fa-solid fa-circle absolute top-[90%] -left-2"></i>
+                        <i className="fa-solid fa-circle absolute top-[75%] -left-2"></i>
+                        <i className="fa-solid fa-circle absolute top-[92%] -left-2"></i>
                     </div>
                     <div className="flex flex-col gap-4 border-gray-900">
                     {skills.map((skill, index) => (
