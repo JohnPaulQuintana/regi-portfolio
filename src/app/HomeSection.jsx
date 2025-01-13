@@ -52,7 +52,7 @@ const HomeSection = () => {
                 <div id="smooth-content">
                     <main className="main-bg">
                         <Header openModal={openModal}/>
-
+                        <div className="mt-24"></div>
                         <RoleTitle/>
 
                         <About />
