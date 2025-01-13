@@ -72,7 +72,7 @@ const RoleTitle = () => {
         <section className="services-crev section-padding" data-scroll-index="1">
             <div className="container desktop:px-40">
                 <div className="sec-head mb-4">
-                    <h6 className="sub-title text-color-primary-green mb-25 font-bold text-xl">My Specialize</h6>
+                    <h6 className="sub-title text-color-primary-green mb-25 font-bold text-xl">My Specialization</h6>
                     <div className="pt-25 bord-thin-top d-flex align-items-center">
                         <h2 className="fw-600 text-u ls1 font-bold text-3xl wide:text-5xl">
                             The Complete Digital Solutions <span className="fw-200"> Specialist</span>
