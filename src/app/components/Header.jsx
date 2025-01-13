@@ -32,7 +32,7 @@ const Header = ({ openModal }) => {
             </div>
             {/* text */}
             <div className="col-span-2 flex flex-col gap-4 w-full pt-10">
-              <h1 className="text-2xl table:text-4xl font-bold tracking-wide">
+              <h1 className="text-2xl tablet:text-4xl font-bold tracking-wide">
                 <span className="text-color-primary-green">Hello,</span> I'm Regi Senior Graphic Designer | Web Developer | Video Editor
                 Based in Philippines
               </h1>
