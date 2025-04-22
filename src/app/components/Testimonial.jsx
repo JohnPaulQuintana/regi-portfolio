@@ -5,14 +5,14 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      text: "Reginald Barawid's design team created visuals that are both eye-catching and impactful. We couldn’t have asked for better.",
+      text: "King design team created visuals that are both eye-catching and impactful. We couldn’t have asked for better.",
       image: 'assets/imgs/testims/t1.jpg',
       name: 'Adam Beckley',
       role: 'Product Manager',
     },
     {
       id: 2,
-      text: "Our website redesign by Reginald Barawid was seamless. The team’s attention to detail and technical expertise is outstanding.",
+      text: "Our website redesign by King was seamless. The team’s attention to detail and technical expertise is outstanding.",
       image: 'assets/imgs/testims/t2.jpg',
       name: 'Adam Beckley',
       role: 'Operations Manager',

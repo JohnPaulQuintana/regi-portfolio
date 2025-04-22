@@ -127,7 +127,7 @@ const ContactForm = () => {
                             </div>
                             <div className="morinfo mt-4 pb-2 bord-thin-bottom">
                                 <h6 className="mb-2 text-xl">Email</h6>
-                                <p className='text-sm'>kingbbarawid5@gmail.com</p>
+                                <p className='text-sm'>regibarawid@gmail.com</p>
                             </div>
 
                             <div className="social-icon-circle mt-4 flex gap-2">
@@ -140,7 +140,7 @@ const ContactForm = () => {
                                 <a href="skype:live:.cid.70e60d46c3462681?chat">
                                     <i className="fab fa-skype"></i>
                                 </a>
-                                <a href="mailto:kingbbarawid5@gmail.com">
+                                <a href="mailto:regibarawid@gmail.com">
                                     <i className="fa-regular fa-envelope"></i>
                                 </a>
                             </div>

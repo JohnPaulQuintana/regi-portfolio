@@ -33,10 +33,9 @@ const Header = ({ openModal }) => {
             {/* text */}
             <div className="col-span-2 flex flex-col gap-4 w-full pt-10">
               <h1 className="text-2xl tablet:text-4xl font-bold tracking-wide">
-                <span className="text-color-primary-green">Hello,</span> I'm Regi Senior Graphic Designer | Web Developer | Video Editor
-                Based in Philippines
+                <span className="text-color-primary-green">Hello,</span> I'm Regi Senior Graphic Designer | Full Stack Web Developer | Video Editor Based in Philippines
               </h1>
-              <p className="text-sm tablet:text-base">Hi, I’m Regi! As a Senior Graphic Designer, Web Developer, and Video Editor based in the Philippines, I specialize in crafting impactful designs, dynamic websites, and captivating videos that bring ideas to life. With a passion for creativity and innovation, I’m here to help you make your vision stand out and connect with your audience.</p>
+              <p className="text-sm tablet:text-base">Hi, I’m Regi! As a Senior Graphic Designer, Full Stack Web Developer, and Video Editor based in the Philippines, I specialize in crafting impactful designs, dynamic websites, and captivating videos that bring ideas to life. With a passion for creativity and innovation, I’m here to help you make your vision stand out and connect with your audience.</p>
 
               <div className="flex justify-start gap-2">
                 <a type="button"
